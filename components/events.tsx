@@ -4,34 +4,41 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { useRouter } from "next/navigation"
 import { Calendar, MapPin, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 const events = [
   {
+    id: "devfest-2024",
     title: "DevFest 2024",
     date: "December 15, 2024",
     location: "SRGPV Campus",
     description: "The biggest developer festival of the year featuring talks, workshops, and networking.",
-    tag: "Featured",
+    tag: "Flagship Event",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
   },
   {
+    id: "flutter-forward",
     title: "Flutter Forward",
     date: "January 20, 2025",
     location: "Tech Hub Auditorium",
     description: "Explore the latest in Flutter development with hands-on sessions and expert insights.",
     tag: "Workshop",
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop",
   },
   {
+    id: "cloud-study-jam",
     title: "Cloud Study Jam",
     date: "February 8, 2025",
     location: "Innovation Lab",
     description: "Deep dive into Google Cloud technologies with guided learning paths and certifications.",
     tag: "Study Jam",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
   },
 ]
 
 export default function Events() {
   const ref = useRef(null)
-  const router = useRouter();
+  const router = useRouter()
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
@@ -75,7 +82,7 @@ export default function Events() {
           className="text-center mt-16"
         >
           <motion.button
-          onClick={() => {router.push('/events')}}
+            onClick={() => router.push('/events')}
             whileHover={{ x: 5 }}
             className="group inline-flex items-center gap-2 text-neutral-900 font-medium"
           >
@@ -92,51 +99,70 @@ export default function Events() {
 }
 
 interface EventCardProps {
+  id: string
   title: string
   date: string
   location: string
   description: string
   tag: string
+  image: string
 }
 
-function EventCard({ title, date, location, description, tag }: EventCardProps) {
-  const router = useRouter();
+function EventCard({ id, title, date, location, description, tag, image }: EventCardProps) {
+  const router = useRouter()
+  
   return (
     <motion.div
-      onClick={() => {router.push('/events')}}
+      onClick={() => router.push(`/events/${id}`)}
       whileHover={{ y: -8 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="group relative h-full"
+      className="group relative h-full cursor-pointer"
     >
-      <div className="relative h-full bg-white rounded-3xl p-8 flex flex-col border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
-        {/* Tag - neutral black instead of gradient */}
-        <div className="mb-6">
-          <span className="inline-flex px-3 py-1 text-xs font-medium rounded-full bg-neutral-900 text-white">
-            {tag}
-          </span>
-        </div>
-
-        <h3 className="text-2xl font-medium text-neutral-900 mb-4">{title}</h3>
-        <p className="text-neutral-500 font-light leading-relaxed mb-6 flex-grow">{description}</p>
-
-        <div className="space-y-3 text-sm text-neutral-400">
-          <div className="flex items-center gap-2">
-            <Calendar className="w-4 h-4" />
-            <span>{date}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
-            <span>{location}</span>
+      <div className="relative h-full bg-white rounded-3xl overflow-hidden flex flex-col border border-neutral-200 hover:border-neutral-300 hover:shadow-xl transition-all duration-300">
+        
+        {/* Image Section */}
+        <div className="relative h-48 w-full overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute top-4 left-4">
+             <span className="inline-block px-3 py-1 text-xs font-bold tracking-wide uppercase bg-white/90 backdrop-blur-sm rounded-full text-neutral-900 shadow-sm">
+                {tag}
+             </span>
           </div>
         </div>
 
-        {/* Hover arrow */}
+        {/* Content Section */}
+        <div className="p-8 flex flex-col flex-grow">
+          <h3 className="text-2xl font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+            {title}
+          </h3>
+          <p className="text-neutral-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-2">
+            {description}
+          </p>
+
+          <div className="space-y-3 text-sm text-neutral-400 pt-6 border-t border-neutral-100">
+            <div className="flex items-center gap-2">
+              <Calendar className="w-4 h-4" />
+              <span>{date}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4" />
+              <span>{location}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Hover arrow (visible on desktop hover) */}
         <motion.div
-          className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100"
+          className="absolute bottom-8 right-8 opacity-0 group-hover:opacity-100 hidden lg:block"
           initial={{ x: -10 }}
           whileHover={{ x: 0 }}
         >
-          <ArrowRight className="w-6 h-6 text-neutral-400" />
+          <ArrowRight className="w-5 h-5 text-primary-600" />
         </motion.div>
       </div>
     </motion.div>
