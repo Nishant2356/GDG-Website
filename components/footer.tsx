@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { Github, Linkedin, Twitter, Youtube } from "lucide-react"
 import LogoIcon from "./logoicon"
 
 const links = [
@@ -12,10 +13,10 @@ const links = [
 ]
 
 const socials = [
-  { label: "Twitter", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "GitHub", href: "#" },
-  { label: "YouTube", href: "#" },
+  { label: "Twitter", href: "#", icon: Twitter },
+  { label: "LinkedIn", href: "#", icon: Linkedin },
+  { label: "GitHub", href: "#", icon: Github },
+  { label: "YouTube", href: "#", icon: Youtube },
 ]
 
 export default function Footer() {
@@ -54,7 +55,7 @@ export default function Footer() {
             ))}
           </nav>
 
-          {/* Socials */}
+          {/* Social Icons */}
           <div className="flex items-center gap-6">
             {socials.map((social, i) => (
               <motion.a
@@ -63,10 +64,11 @@ export default function Footer() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.1 }}
-                whileHover={{ scale: 1.1 }}
-                className="text-neutral-400 hover:text-neutral-900 transition-colors text-sm"
+                whileHover={{ scale: 1.1, y: -2 }}
+                className="text-neutral-400 hover:text-neutral-900 transition-colors p-2"
+                aria-label={social.label}
               >
-                {social.label}
+                <social.icon className="w-5 h-5" />
               </motion.a>
             ))}
           </div>
