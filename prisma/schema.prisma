@@ -1,0 +1,152 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  // output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(uuid())
+  name          String
+  email         String   @unique
+  password      String?  // optional for OAuth
+  role          Role     @default(MEMBER)
+  profileImage  String?
+  bio           String?
+  github        String?
+  linkedin      String?
+  twitter       String?
+  joinedAt      DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  eventsOrganized Event[] @relation("OrganizerEvents")
+  speakingEvents  Event[] @relation("SpeakerEvents")
+  blogs           BlogPost[]
+}
+
+enum Role {
+  MEMBER
+  ORGANIZER
+  CORE_TEAM
+  SPEAKER
+}
+
+model Event {
+  id              String   @id @default(uuid())
+  title           String
+  description     String
+  bannerImage     String?
+  category        EventCategory
+  date            DateTime
+  startTime       String?
+  endTime         String?
+  location        String?
+  registrationLink String?
+  isFeatured      Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  organizer   User     @relation("OrganizerEvents", fields: [organizerId], references: [id])
+  organizerId String
+  speakers    User[]   @relation("SpeakerEvents")
+  tags        Tag[]    @relation("EventTags")
+}
+
+enum EventCategory {
+  WORKSHOP
+  HACKATHON
+  TALK
+  MEETUP
+}
+
+model TeamMember {
+  id        String   @id @default(uuid())
+  name      String
+  role      String
+  image     String?
+  bio       String?
+  linkedin  String?
+  github    String?
+  twitter   String?
+  order     Int?
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id           String   @id @default(uuid())
+  title        String
+  slug         String   @unique
+  content      String
+  coverImage   String?
+  publishedAt  DateTime?
+  isPublished  Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  authorId String
+  author   User @relation(fields: [authorId], references: [id])
+  tags     Tag[] @relation("BlogTags")
+}
+
+model Sponsor {
+  id          String   @id @default(uuid())
+  name        String
+  logo        String
+  website     String?
+  tier        SponsorTier
+  description String?
+  createdAt   DateTime @default(now())
+}
+
+enum SponsorTier {
+  PLATINUM
+  GOLD
+  SILVER
+  COMMUNITY
+}
+
+model Testimonial {
+  id        String   @id @default(uuid())
+  name      String
+  message   String
+  role      String?
+  avatar    String?
+  rating    Int?
+  createdAt DateTime @default(now())
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  status    MessageStatus @default(UNREAD)
+  createdAt DateTime @default(now())
+}
+
+enum MessageStatus {
+  UNREAD
+  IN_PROGRESS
+  RESOLVED
+}
+
+model Tag {
+  id     String   @id @default(uuid())
+  name   String   @unique
+  events Event[]  @relation("EventTags")
+  blogs  BlogPost[] @relation("BlogTags")
+}
