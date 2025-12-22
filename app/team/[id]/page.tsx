@@ -9,6 +9,7 @@ import { team } from "@/app/data/team"
 export default async function MemberPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const member = team.find((m) => m.id === id)
+  console.log(id, member)
 
   if (!member) {
     return (
@@ -41,7 +42,7 @@ export default async function MemberPage({ params }: { params: Promise<{ id: str
             <div className="flex-shrink-0 w-full md:w-auto flex flex-col items-center md:items-start">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl bg-neutral-100">
                 <Image
-                  src={member.image || "/placeholder.svg"}
+                  src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"

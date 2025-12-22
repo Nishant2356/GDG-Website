@@ -3,42 +3,12 @@
 import { motion } from "framer-motion"
 import { memo, useMemo, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
+import { team } from "@/app/data/team"
 
 type Member = { name: string; role: string; image: string }
 
 // The "Main Main" Leaders of the chapter
-const baseTeam: Member[] = [
-  {
-    name: "Alex Chen",
-    role: "Community Lead",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "David Kim",
-    role: "Technical Lead",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "Sarah Miller",
-    role: "Events Coordinator",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "Priya Patel",
-    role: "Design Lead",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "James Wilson",
-    role: "Developer Advocate",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "Noah Evans",
-    role: "AV Coordinator",
-    image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=800&auto=format&fit=crop",
-  },
-]
+const baseTeam: Member[] = team;
 
 // Duplicate enough times to fill widely on large screens
 const REPEATS = 4 

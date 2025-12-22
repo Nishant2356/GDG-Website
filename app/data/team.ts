@@ -16,7 +16,7 @@ export const team = [
     id: "priya-patel",
     name: "Priya Patel",
     role: "Head",
-    image: "./gdg-team-img/me.1 - Priya Patel.jpg",
+    image: "./gdg-team-img/me.1 - Priya Patel (1).jpg",
     bio: "Head of the Public Relation and Outreach Department.",
     email: "priya.gdg25@gmail.com",
     linkedin: "https://www.linkedin.com/in/priya-patel-3b0915307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
