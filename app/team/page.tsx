@@ -89,7 +89,7 @@ export default function TeamPage() {
           {/* 🌟 LEADS */}
           <section className="mb-20">
             <h2 className="text-3xl font-bold mb-8">Leads</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
               {leads.map((member) => (
                 <TeamCard
                   key={member.id}
