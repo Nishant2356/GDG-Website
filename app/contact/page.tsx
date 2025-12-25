@@ -102,8 +102,8 @@ export default function ContactPage() {
                             <Mail className="w-5 h-5 text-neutral-900" />
                         </div>
                         <h3 className="font-bold text-lg mb-1">Email Us</h3>
-                        <a href="mailto:contact@gdgsoitrgpv.com" className="text-neutral-600 hover:text-black transition-colors">
-                            contact@gdgsoitrgpv.com
+                        <a href="gdgoncampussoit@gmail.com" className="text-neutral-600 hover:text-black transition-colors">
+                        gdgoncampussoit@gmail.com
                         </a>
                     </div>
                     <div className="p-6 bg-neutral-50 rounded-2xl border border-neutral-100 hover:shadow-md transition-all duration-300">
@@ -112,7 +112,7 @@ export default function ContactPage() {
                         </div>
                         <h3 className="font-bold text-lg mb-1">Visit Us</h3>
                         <p className="text-neutral-600">
-                            SOIT, RGPV Campus<br/>Bhopal, MP
+                            SOIT, RGPV<br/>Bhopal, MP
                         </p>
                     </div>
                 </div>
@@ -122,10 +122,10 @@ export default function ContactPage() {
                     <h3 className="font-bold text-xl mb-6">Follow our updates</h3>
                     <div className="flex gap-4">
                         {[
-                            { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
-                            { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" },
+                            // { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
+                            { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/gdg_soitrgpv?igsh=MWpjZmFiYWt3MWdmaw==", label: "Instagram" },
                             { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-                            { icon: <Github className="w-5 h-5" />, href: "#", label: "GitHub" },
+                            { icon: <Github className="w-5 h-5" />, href: "https://github.com/gdg-soit-rgpv", label: "GitHub" },
                         ].map((social, idx) => (
                             <a 
                                 key={idx}

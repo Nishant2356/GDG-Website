@@ -22,7 +22,7 @@ export default function Events() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-light text-neutral-900 tracking-tight mb-6">
-            Upcoming <span className="font-medium">Events</span>
+            {/* Upcoming*/} <span className="font-medium">Events</span> 
           </h2>
           <p className="text-lg text-neutral-500 font-light max-w-2xl mx-auto">
             Join us at our upcoming events and be part of the developer community.

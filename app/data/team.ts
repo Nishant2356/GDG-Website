@@ -10,7 +10,7 @@ export const team = [
     linkedin: "https://www.linkedin.com/in/akshajshridhar",
     instagram: "https://www.instagram.com/_.akshajshridhar._?igsh=MXU2YnJtZ2FkeHRhMA%3D%3D&utm_source=qr",
     twitter: "",
-    department: "A/V",
+    department: "Social Media Management",
   },
   {
     id: "priya-patel",
@@ -67,7 +67,7 @@ export const team = [
   {
     id: "arin-kadbe",
     name: "Arin Kadbe",
-    role: "A/V Lead",
+    role: "Social Media Lead",
     type: "lead",
     image: "/gdg-team-img/IMG_20251106_061141_658 - Arin Kadbe.jpg",
     bio: "Leads social media strategy and digital engagement for GDG.",
@@ -75,7 +75,7 @@ export const team = [
     linkedin: "https://www.linkedin.com/in/imarinkadbe",
     instagram: "https://www.instagram.com/_.aahe.arin._",
     twitter: "",
-    department: "A/V",
+    department: "Social Media Management",
   },
   {
     id: "aryan-chaurasiya",
@@ -301,7 +301,7 @@ export const team = [
   {
     id: "raghav-dubey",
     name: "Raghav Dubey",
-    role: "A/V Volunteer",
+    role: "Social Media Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_2025-11-13-00-29-22-17_6012fa4d4ddec268fc5c7112cbb265e7 - Raghav Dubey.jpg",
     bio: "Under probation in the Social Media Management and Auditory & Visuals Department.",
@@ -309,7 +309,7 @@ export const team = [
     linkedin: "https://www.linkedin.com/in/raghav-dubey-3183412b4?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     instagram: "https://www.instagram.com/_ra_ghav19?igsh=MTA4OHpmeTZtZGFpOQ==",
     twitter: "",
-    department: "A/V",
+    department: "Social Media Management",
   },
   {
     id: "raunak-pandey",
@@ -353,7 +353,7 @@ export const team = [
   {
     id: "shini-fellows",
     name: "Shini Fellows",
-    role: "A/V Volunteer",
+    role: "Social Media Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_2025-12-09-22-21-57-63_92460851df6f172a4592fca41cc2d2e6 - Shini Fellows.jpg",
     bio: "Part of the Social Media Management Department.",
@@ -361,6 +361,6 @@ export const team = [
     linkedin: "",
     instagram: "https://www.instagram.com/shinifellows?igsh=cnJleTNyaDZxNjN0",
     twitter: "",
-    department: "A/V",
+    department: "Social Media Management",
   },
 ];
