@@ -2,7 +2,7 @@ export const team = [
   {
     id: "akshaj-shridhar",
     name: "Akshaj Shridhar",
-    role: "Lead of Social Media Management",
+    role: "Social Media Lead",
     type: "lead",
     image: "/gdg-team-img/IMG_0686 - Akshaj Shridhar.JPG",
     bio: "Head of Social Media Department at GDG, responsible for managing and growing social media presence.",
@@ -15,7 +15,7 @@ export const team = [
   {
     id: "priya-patel",
     name: "Priya Patel",
-    role: "Head",
+    role: "PR Lead",
     type: "lead",
     image: "/gdg-team-img/me.1 - Priya Patel (1).jpg",
     bio: "Head of the Public Relation and Outreach Department.",
@@ -28,7 +28,7 @@ export const team = [
   {
     id: "shivani-yadav",
     name: "Shivani Yadav",
-    role: "Lead",
+    role: "Event Management Lead",
     type: "lead",
     image: "/gdg-team-img/IMG_20251210_122450 - Shivani Yadav.jpg",
     bio: "Lead of the Event and Logistics Department at GDG.",
@@ -41,7 +41,7 @@ export const team = [
   {
     id: "antima-katare",
     name: "Antima Katare",
-    role: "Volunteer",
+    role: "PR Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/InShot_20251208_174325295 - Antima Katare.jpg",
     bio: "Handles public communication and maintains the organization’s public image.",
@@ -54,7 +54,7 @@ export const team = [
   {
     id: "anuj-parmar",
     name: "Anuj Parmar",
-    role: "Volunteer",
+    role: "Event Management Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/1001504180 - Anuj Parmar.jpg",
     bio: "Probationary member in the Event and Logistics Department.",
@@ -67,7 +67,7 @@ export const team = [
   {
     id: "arin-kadbe",
     name: "Arin Kadbe",
-    role: "Head of Social Media Department",
+    role: "A/V Lead",
     type: "lead",
     image: "/gdg-team-img/IMG_20251106_061141_658 - Arin Kadbe.jpg",
     bio: "Leads social media strategy and digital engagement for GDG.",
@@ -80,7 +80,7 @@ export const team = [
   {
     id: "aryan-chaurasiya",
     name: "Aryan Chaurasiya",
-    role: "Volunteer",
+    role: "PR Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_20251208-182556 - Aryan Chaurasiya.jpg",
     bio: "Volunteer supporting public relations and outreach initiatives.",
@@ -93,7 +93,7 @@ export const team = [
   {
     id: "aryan-singh",
     name: "Aryan Singh",
-    role: "Volunteer",
+    role: "Event Management Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Snapchat-1103177388 - Aryan.jpg",
     bio: "Handles event planning, logistics, and execution support.",
@@ -106,7 +106,7 @@ export const team = [
   {
     id: "brajmohan-verma",
     name: "Brajmohan Verma",
-    role: "Volunteer",
+    role: "A/V Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_2025-01-10-17-15-37-86_40deb401b9ffe8e1df2f1cc5ba480b12 - Brajmohan verma.jpg",
     bio: "Content research and documentation volunteer at GDG.",
@@ -119,7 +119,7 @@ export const team = [
   {
     id: "hariti-bhargava",
     name: "Hariti Bhargava",
-    role: "Volunteer",
+    role: "Graphics Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/1765297966781 - Abhilasha Bhargava.jpg",
     bio: "Fresher and newly recruited member in the graphics and social media department.",
@@ -132,7 +132,7 @@ export const team = [
   {
     id: "harsh-longrey",
     name: "Harsh Longrey",
-    role: "Volunteer",
+    role: "A/V Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/1000208790 (1) - Harsh Longrey.jpg",
     bio: "Volunteer in content research and documentation.",
@@ -171,7 +171,7 @@ export const team = [
   {
     id: "kirtan-kumar-kori",
     name: "Kirtan Kumar Kori",
-    role: "Volunteer",
+    role: "Tech Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_20251208_192219 - Kirtan.jpg",
     bio: "Student volunteer in the tech department.",
@@ -184,7 +184,7 @@ export const team = [
   {
     id: "kratika-rajput",
     name: "Kratika Rajput",
-    role: "Volunteer",
+    role: "Event Management Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/unnamed - Kratika Rajput.png",
     bio: "Member of the event and logistics team supporting operations.",
@@ -197,7 +197,7 @@ export const team = [
   {
     id: "kshitij-sharma",
     name: "Kshitij Sharma",
-    role: "Volunteer",
+    role: "Event Management Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_0088 - Kshitij Sharma.jpeg",
     bio: "Volunteer in the event and logistics department.",
@@ -210,7 +210,7 @@ export const team = [
   {
     id: "manthaj-dhote",
     name: "Manthaj Dhote",
-    role: "Volunteer",
+    role: "PR Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_20241109_072411 - Manthaj Dhote.jpg",
     bio: "Volunteer in the Public Relation and Outreach Department.",
@@ -223,7 +223,7 @@ export const team = [
   {
     id: "mohd-affaan",
     name: "Mohd Affaan",
-    role: "Volunteer",
+    role: "Event Management Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/1765313992684 - Affaan.jpg",
     bio: "Plans and manages events as part of the event and logistics team.",
@@ -236,7 +236,7 @@ export const team = [
   {
     id: "nilesh-chourasiya",
     name: "Nilesh Chourasiya",
-    role: "Volunteer",
+    role: "Graphics Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_20250523_125924_329 - Nilesh Chourasiya.webp",
     bio: "Graphics designer responsible for visual creatives.",
@@ -263,7 +263,7 @@ export const team = [
     id: "pankaj-chouksey",
     name: "Pankaj Chouksey",
     role: "Graphics Lead",
-    type: "volunteer",
+    type: "lead",
     image: "/gdg-team-img/WhatsApp Image 2025-12-10 at 3.39.06 PM - pankaj chouksey.jpeg",
     bio: "Graphic designer creating visual assets for the community.",
     email: "pankajchouksey521@gmail.com",
@@ -275,7 +275,7 @@ export const team = [
   {
     id: "piyush-thakre",
     name: "Piyush Thakre",
-    role: "Volunteer",
+    role: "Tech Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG-20250418-WA0091_11zon - Piyush Thakre.jpg",
     bio: "Volunteer in the Tech Department supporting development tasks.",
@@ -301,7 +301,7 @@ export const team = [
   {
     id: "raghav-dubey",
     name: "Raghav Dubey",
-    role: "Volunteer",
+    role: "A/V Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_2025-11-13-00-29-22-17_6012fa4d4ddec268fc5c7112cbb265e7 - Raghav Dubey.jpg",
     bio: "Under probation in the Social Media Management and Auditory & Visuals Department.",
@@ -314,7 +314,7 @@ export const team = [
   {
     id: "raunak-pandey",
     name: "Raunak Pandey",
-    role: "Volunteer",
+    role: "PR Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG-20250801-WA0013 (1) - Raunak.jpg",
     bio: "Volunteer supporting PR and outreach activities.",
@@ -327,7 +327,7 @@ export const team = [
   {
     id: "sadiya-khatoon",
     name: "Sadiya Khatoon",
-    role: "Volunteer",
+    role: "Graphics Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_20251209_203043~2 - Hamza Khatoon.jpg",
     bio: "Graphic designer contributing to visual content creation.",
@@ -340,7 +340,7 @@ export const team = [
   {
     id: "saket-gupta",
     name: "Saket Gupta",
-    role: "Volunteer",
+    role: "PR Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/IMG_20240819_205543 - Saket Gupta.jpg",
     bio: "Coordinator in the Public Relation and Outreach Department.",
@@ -353,7 +353,7 @@ export const team = [
   {
     id: "shini-fellows",
     name: "Shini Fellows",
-    role: "Volunteer",
+    role: "A/V Volunteer",
     type: "volunteer",
     image: "/gdg-team-img/Screenshot_2025-12-09-22-21-57-63_92460851df6f172a4592fca41cc2d2e6 - Shini Fellows.jpg",
     bio: "Part of the Social Media Management Department.",
