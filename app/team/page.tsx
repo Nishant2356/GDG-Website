@@ -74,7 +74,7 @@ export default function TeamPage() {
         <div className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="mb-12 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">The Minds Behind GDG</h1>
-            <p className="text-lg text-neutral-500">Meet the leaders and innovators of GDG SOIT RGPV</p>
+            <p className="text-lg text-neutral-500">Meet the leaders and innovators of GDG</p>
           </div>
 
           {/* 🌟 Slightly Larger Pramanya Card */}
