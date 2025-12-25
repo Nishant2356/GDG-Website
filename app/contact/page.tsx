@@ -43,7 +43,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         id="name"
-                        placeholder="John Doe"
+                        placeholder="Rahul Sharma"
                         className="w-full px-4 py-4 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-neutral-400 transition-all"
                       />
                     </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         id="email"
-                        placeholder="john@example.com"
+                        placeholder="rahul@example.com"
                         className="w-full px-4 py-4 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-neutral-400 transition-all"
                       />
                     </div>
