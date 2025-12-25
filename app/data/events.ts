@@ -99,7 +99,7 @@ export const events = [
   {
     id: "gdg-orientation",
     title: "GDG Orientation",
-    date: "April 10, 2025",
+    date: "November 7, 2025",
     location: "UIT RGPV Hall",
     description: "Welcome to the community! An introduction to GDG, our mission, and upcoming opportunities.",
     tag: "Completed",
