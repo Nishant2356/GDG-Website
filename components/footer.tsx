@@ -15,6 +15,8 @@ const links = [
 const socials = [
   { label: "Instagram", href: "https://www.instagram.com/gdg_soitrgpv?igsh=MWpjZmFiYWt3MWdmaw==", icon: Instagram },
   { label: "Github", href: "https://github.com/gdg-soit-rgpv", icon: Github },
+  { label: "Linkedin", href: "https://www.linkedin.com/company/google-developer-student-clubs-soit-rgpv/", icon: Linkedin },
+  { label: "Twitter", href: "https://x.com/GDGSoit", icon: Twitter }
 ]
 
 export default function Footer() {

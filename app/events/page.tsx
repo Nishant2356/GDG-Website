@@ -85,7 +85,7 @@ export default function EventsPage() {
         <section className="py-20 px-6 md:px-12 bg-neutral-50">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center justify-between mb-12">
-              <h2 className="text-3xl font-bold">Completed Events</h2>
+              <h2 className="text-3xl font-bold">Events</h2>
               <div className="hidden md:block text-sm text-neutral-500 font-medium">
                 Showing {regularEvents.length} events
               </div>
