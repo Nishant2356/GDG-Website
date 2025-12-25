@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react"
+import { Github, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
 import LogoIcon from "./logoicon"
 
 const links = [
@@ -15,7 +15,7 @@ const links = [
 const socials = [
   { label: "Twitter", href: "#", icon: Twitter },
   { label: "LinkedIn", href: "#", icon: Linkedin },
-  { label: "GitHub", href: "#", icon: Github },
+  { label: "Instagram", href: "https://www.instagram.com/gdg_soitrgpv?igsh=MWpjZmFiYWt3MWdmaw==", icon: Instagram },
   { label: "YouTube", href: "#", icon: Youtube },
 ]
 
