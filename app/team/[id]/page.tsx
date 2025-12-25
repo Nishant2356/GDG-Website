@@ -108,6 +108,16 @@ export default async function MemberPage({ params }: { params: Promise<{ id: str
                       <Twitter className="w-5 h-5" />
                     </Link>
                   )}
+                  {member.github && (
+                    <Link
+                      href={member.github}
+                      target="_blank"
+                      className="p-3 rounded-full bg-neutral-50 text-neutral-600 hover:bg-black hover:text-white transition-all duration-300"
+                      aria-label="Github Profile"
+                    >
+                      <Github className="w-5 h-5" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
